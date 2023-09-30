@@ -1,6 +1,6 @@
 # reactjs-navbar-dropdown
 
-`this is a react-app and part of a react tutorial`
+`this is a react-app that implements a navigation dropdown with multiple levels`
 
 This repo is an exercise to get familiarize with ReactJS.
 
