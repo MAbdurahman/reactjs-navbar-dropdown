@@ -1,9 +1,24 @@
 import React from 'react';
+import { menuItems} from "../data/menuItems";
+import MenuItems from "./MenuItems";
 
 export default function Navbar() {
 
     return (
-        <div>Navbar</div>
+        <nav>
+            <ul className="menus">
+                {menuItems.map((menu, index) => {
+                    const depthLevel = 0;
+                    return (
+                        <MenuItems
+                            items={menu}
+                            key={index}
+                            depthLevel={depthLevel}
+                        />
+                    );
+                })}
+            </ul>
+        </nav>
 
     );
 };
