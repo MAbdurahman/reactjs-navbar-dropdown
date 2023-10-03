@@ -309,7 +309,7 @@ a.underline-hover-effect {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-.section-submenu {
+.section-menu-item {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -318,8 +318,21 @@ a.underline-hover-effect {
   text-align: center;
 
 }
+.submenu-heading {
+  display: block;
+  margin-bottom: 1em;
+  text-align: center;
+
+}
+
+.submenu-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .center-content {
   width: 100%;
+  padding-top: 5em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -332,8 +345,20 @@ a.underline-hover-effect {
 .center-content-title {
   text-align: center;
 }
-a.submenu-link {
+.submenu-section {
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+}
+.submenu-section h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.submenu-link {
   color: var(--clr-augmented-700);
+}
+.submenu-link:not(:last-child) {
+  margin-right: 1em;
 }
 .section1 {
   background-color: var(--clr-primary-800);
@@ -491,15 +516,22 @@ header {
 
 .menu-items {
   position: relative;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 
 .menu-items a {
   display: block;
-  font-size: 1rem;
-  font-weight: 600;
+  /*font-size: 1rem;
+  font-weight: 600;*/
   color: inherit;
   text-decoration: none;
+}
+.menu-items,
+.menu-items a,
+.menu-items button{
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
 }
 
 .menu-items button {
@@ -549,7 +581,7 @@ button span {
   padding: 0.5rem 0;
   list-style: none;
   background-color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   display: none;
 }
 
@@ -581,4 +613,43 @@ button span {
 .content a {
   /*color: #cc3852;*/
   margin-right: 16px;
+}
+
+
+.u-wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  .u-wrapper {
+    max-width: 544px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-wrapper {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .u-wrapper {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .u-wrapper {
+    max-width: 1144px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .u-wrapper {
+    max-width: 1320px;
+  }
 }

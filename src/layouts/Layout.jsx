@@ -7,7 +7,7 @@ export default function Layout() {
     return (
         <div>
             <Header />
-            <div className="content">
+            <div className="u-wrapper">
                 <Outlet />
             </div>
         </div>

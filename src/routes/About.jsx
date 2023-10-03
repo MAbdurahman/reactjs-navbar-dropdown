@@ -4,7 +4,7 @@ export default function About() {
 
     return (
         <div className="center-content">
-            <h2>About</h2>
+            <h2>About Us</h2>
         </div>
 
     );

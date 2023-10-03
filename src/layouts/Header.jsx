@@ -6,7 +6,7 @@ export default function Header() {
 
     return (
         <header className="header">
-            <div className="header__navbar">
+            <div className="header__navbar u-wrapper">
                 <Link to="/" className="logo">
                     LogoBrand
                 </Link>

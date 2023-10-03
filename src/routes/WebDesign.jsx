@@ -4,7 +4,7 @@ export default function WebDesign() {
 
     return (
         <div className="center-content">
-            <h2>WebDesign</h2>
+            <h2>Web Design</h2>
         </div>
 
     );

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 export default function Services() {
 
     return (
-        <div className="center-content">
+        <div className="section-menu-item submenu-section">
             <h2>Services</h2>
             <section className="section-submenu">
                 <Link className="submenu-link" to="/web-design">Web Design</Link>
